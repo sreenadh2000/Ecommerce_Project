@@ -286,6 +286,7 @@ h2 {
 
   #header {
     margin-top: 5%;
+    margin-left: 6%;
     margin-bottom: 5%;
     padding-bottom: 0;
     border-bottom: 0;
@@ -451,14 +452,13 @@ h1 {
   display: block;
   margin-top: 7%;
   margin-bottom: 5%;
-  /* width: 100%; */
   background-color: hsl(223, 64%, 98%);
 }
 .button_section input {
-  width: 23%;
+  width: 32%;
 }
 .button_section button {
-  width: 23%;
+  width: 32%;
  height: 40px;
 }
 .added_button {
