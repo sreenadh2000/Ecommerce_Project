@@ -1,0 +1,584 @@
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+p{
+  font-size: 16px;
+  opacity: 0.5;
+}
+/* grid system */
+#header {
+  margin: 1% 8%;
+  padding-bottom: 5%;
+  border-bottom: 2px solid gray;
+}
+.drop_down_menu {
+  display: none;
+}
+.logo_button {
+  background-color: white;
+  border: 0;
+  margin: 0 4% 0 0;
+  opacity: 0.9;
+}
+.header_a {
+  background-color: white;
+  margin-left: 2%;
+  border: 0;
+  opacity: 0.5;
+}
+.header_a:hover {
+  opacity: 1;
+}
+.lap_cart_button {
+  margin-left: 35%;
+  background-color: white;
+  border: 0;
+  position: relative;
+}
+.cart_button {
+  display: none;
+  margin-left: 40%;
+  background-color: white;
+  border: 0;
+  position: relative;
+}
+/* Cart section on large screens...... */
+.lap_cartSection {
+  display: none;
+  width: 25%;
+  height: 35%;
+  position: absolute;
+  top: 15%;
+  right: 20%;
+  background-color: hsl(0, 0%, 100%);
+  z-index: 1;
+  box-shadow: 10px 10px 25px grey;
+}
+.lap_cartSection h3 {
+  opacity: 0.7;
+  top: 5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  border-bottom: 2px solid gray;
+}
+.lap_TotalAmt {
+  position: relative;
+  margin: 10% 10%;
+  margin-right: 2;
+}
+.lap_TotalAmt .product {
+  display: inline;
+  position: absolute;
+  width: 15%;
+}
+
+.lap_TotalAmt p {
+  display: inline;
+  position: absolute;
+  left: 25%;
+  margin-top: 2px;
+  margin-bottom: 2%;
+}
+.lap_TotalAmt .originalValue {
+  position: relative;
+  top: 25px;
+}
+.lap_TotalAmt section {
+position: relative;
+display: inline;
+top: 27px;
+left: 24%;
+}
+.lap_TotalAmt .cart_value {
+margin-left: 2%;
+margin-right: 2%;
+opacity: 0.5;
+}
+.lap_TotalAmt .Amount {
+  font-weight: bold;
+}
+.lap_TotalAmt .delete {
+  display: inline;
+  margin-left: 90%;
+}
+.lap_cartSection button {
+  position: relative;
+  margin: auto 10%;
+  width: 80%;
+  height: 15%;
+  color: white;
+  font-weight: bold;
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 10px;
+  border: 0;
+}
+.lap_cartSection button:hover {
+  opacity: 0.6;
+}
+/* section_....... */
+.sectionCount {
+  position: absolute;
+  right: 1%;
+  top: 0;
+  border-radius: 50%;
+  background-color: hsl(26, 100%, 55%);
+  color: white;
+  width: 50%;
+}
+
+.avatar_button {
+  background-color: white;
+  border: 0;
+  margin-left: 2%;
+}
+.avatar{
+ width: 50px;
+ height: 50px;
+}
+.avatar:hover {
+  border: 2px solid  hsl(26, 100%, 55%);
+  border-radius: 50%;
+}
+/*grid container 2.......*/
+
+.grid_container_2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: left;
+  margin: 0 9% 0 5%;
+}
+
+/*images section*/
+
+.product_pictures {
+  margin: 8% 10%;
+}
+table {
+  text-align: center;
+  border-spacing: 30px;
+}
+.picture_1 {
+  height: 350px;
+  border-radius: 10px;
+}
+.small_picture {
+  border-radius: 10px;
+  height: 65px;
+}
+.small_picture_1, .small_picture:hover{
+  opacity: 0.5;
+  border: 4px solid hsl(26, 100%, 55%);
+}
+.in_the_image {
+  display: none;
+}
+/* mobile slides show div.............. */
+.Slide_container {
+  display: none;
+  position: relative;
+  margin: auto;
+  max-width: 600px;
+  box-sizing: border-box;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+.slides_a img {
+  width: 100%;
+  vertical-align: middle;
+  height: 350px;
+  margin-top: 8%;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  color: hsl(26, 100%, 55%);
+  background-color: white;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.0s;
+  animation-name: fade;
+  animation-duration: 1.0s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*cart_added_section..........*/
+
+.cart_added_section {
+  margin-left: 15%;
+  padding-top: 10%;
+}
+.head_colour {
+  color:  hsl(26, 100%, 55%);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  display: inline;
+}
+.offer {
+  font-weight: bold;
+  display: inline;
+  margin-left: 2%;
+  padding: 2px 10px;
+  color:  hsl(26, 100%, 55%);
+  background-color: hsl(25, 100%, 94%);
+  border-radius: 5px;
+}
+.adding_cart{
+  display: inline;
+}
+.button_lower {
+  border: 0;
+  display: inline;
+  background-color: hsl(223, 64%, 98%);
+  padding: 2% 3%;
+}
+.no_of_items {
+  width: 33%;
+}
+.button_section {
+  background-color: hsl(223, 64%, 98%);
+  display: inline;
+  padding: 2% 0;
+}
+.added_button {
+  margin-left: 2%;
+  width: 45%;
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 10px;
+  color: hsl(223, 64%, 98%);
+}
+.added_button:hover {
+  opacity: 0.6;
+}
+.adding_logo {
+  width: 6%;
+  margin-right: 5%;
+}
+/*meadia quaries..........*/
+
+@media only screen and (max-width: 700px) {
+
+/*header system ..................*/
+
+  #header {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .header_a {
+    display: none;
+  }
+  .drop_down_menu {
+    display: inline;
+  }
+  .drop_down_menu a {
+    opacity: 0.6;
+  }
+  .drop_down_menu a:hover {
+    opacity: 1;
+  }
+  .menu_icon_button {
+    background-color: white;
+    display: inline;
+    border: 0;
+    top: 20%;
+  }
+  .top_header {
+    display: inline;
+  }
+ .Menu_tab {
+   display: none;
+ }
+ .logo_button {
+   margin-left: 3%;
+ }
+ .cart_button {
+   display: inline;
+   margin-left: 20%;
+ }
+ .lap_cart_button {
+   display: none;
+ }
+ .avatar_button {
+   width: 0;
+ }
+ .avatar {
+   width: 25px;
+   height: 25px;
+ }
+
+ .Menu_tab a{
+   display: block;
+   margin: 5%;
+   color: #000;
+   font-weight: 900;
+   text-decoration: none;
+ }
+ .Menu_tab img{
+   margin: 4% 0 5% 4%;
+ }
+
+/*product images section.................*/
+.Slide_container {
+  display: block;
+}
+.image_section {
+  display: none;
+}
+.grid_container_2 {
+  display: block;
+  margin: 0;
+}
+
+/* cart_section_amount showed...... */
+
+.cartSection {
+  display: none;
+  position: absolute;
+  height: 300px;
+  top: 10%;
+  width: 95%;
+  left: 2.5%;
+  background-color: white;
+  z-index: 1;
+  border-radius: 8px;
+}
+.cartSection h3 {
+  margin-top: 5%;
+  padding-bottom: 30px;
+  padding-left: 5%;
+  border-bottom: 1px solid gray;
+}
+.TotalAmt_no {
+  text-align: center;
+  margin-top: 20%;
+  font-weight: bold;
+  opacity: 0.6;
+}
+.TotalAmt {
+  position: relative;
+  margin: 10% 10%;
+}
+.TotalAmt .product {
+  display: inline;
+  position: absolute;
+  width: 15%;
+
+}
+.TotalAmt p {
+  display: inline;
+  position: absolute;
+  left: 25%;
+  margin-top: 2px;
+  margin-bottom: 2%;
+}
+.originalValue {
+  position: relative;
+  top: 25px;
+}
+.TotalAmt section {
+position: relative;
+display: inline;
+top: 27px;
+left: 45%;
+}
+.TotalAmt .cart_value {
+margin-left: 1%;
+margin-right: 2%;
+opacity: 0.5;
+}
+.TotalAmt .Amount {
+  font-weight: bold;
+}
+.TotalAmt .delete {
+  display: inline;
+  margin-left: 90%;
+}
+.cartSection button {
+  position: relative;
+  margin: auto 10%;
+  width: 80%;
+  height: 15%;
+  color: white;
+  font-weight: bold;
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 10px;
+  border: 0;
+}
+.cartSection button:hover {
+  opacity: 0.6;
+}
+/* amount section section ............*/
+.cart_added_section {
+  padding: 0;
+  margin: 2% 5%;
+}
+h1 {
+  font-size: 2rem;
+}
+.offer {
+  margin-right: 50%;
+}
+.strike_amount {
+  display: inline;
+}
+/*button section.........*/
+.button_section {
+  display: block;
+  margin-top: 7%;
+  margin-bottom: 5%;
+  width: 100%;
+  background-color: hsl(223, 64%, 98%);
+}
+.button_section button {
+  width: 32.5%;
+  height: 50px;
+}
+.added_button {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+}
+.adding_cart {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+}
+@media only screen and (max-width: 1111px) {
+  .product_pictures {
+    margin: 8% 0;
+  }
+  table {
+    text-align: left;
+    border-spacing: 0;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .button_section {
+    width: 100%;
+  }
+  .lap_TotalAmt p {
+  font-size: 12px;
+  }
+  .lap_TotalAmt .delete {
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 950px) {
+  .lap_cart_button {
+    margin-left: 0;
+  }
+  .avatar_button {
+    margin: 0;
+  }
+  .no_of_items {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 930px) and (max-width: 1500px) {
+  .lap_cart_button {
+    margin-left: 20%;
+  }
+  .no_of_items {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 950px) and (max-width: 1024px) {
+  .lap_cart_button {
+    margin-left: 15%;
+  }
+}
+/* adedd clasess ***  700px  ****.......................................*/
+   /* droped Menu..*/
+.droped_menu {
+  background-color: white;
+  display: block;
+  height: 150%;
+  width: 80%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+}
+/* cartSection.......... */
+.cart_Section{
+  width: 80%;
+  height: 40%;
+  border: 2px;
+  background-color: gray;
+}
+/* lap slide show added css...... */
+.show {
+  position: absolute;
+  z-index: 2;
+  margin: 0 20%;
+  bottom: 15%;
+  display: block;
+  width: 60%;
+}
+.bodyShow {
+  background: hsl(0, 0%, 0%,0.7);
+}
+/* open window..... */
+.X_image {
+  display: none;
+  width: 5%;
+  margin-left: 97%;
+}
+.X_image img:hover {
+opacity: 0.5;
+}
+.small_images {
+  display: none;
+  width: 100%;
+  position: relative;
+  left: 2%;
+}
+.small_images img{
+  margin-top: 5%;
+  width: 21%;
+  margin-right: 2%;
+  border-radius: 8px;
+}
+.background {
+  background: hsl(0, 0%, 0%,0.05);
+}
+.opacity {
+  opacity: 0.4;
+}
+.dot {
+  opacity: 1;
+}
+
+.active,
+.dot:hover {
+  opacity: 0.5;
+  border: 3px solid hsl(26, 100%, 55%);
+}

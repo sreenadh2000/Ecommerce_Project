@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon32x32.png">
+<!-- font family -->
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <title>Sreenadh_PROJECT_ecommerce-product-page</title>
+  </head>
+  <body>
+    <!-- Header content -->
+   <div id="header">
+      <div class="drop_down_menu">
+    <button class="menu_icon_button" type="button" name="button"> <img class="menu_icon" src="images/icon-menu.svg" alt="menu"></button>
+      <!-- button clicking navgation bar occure................ -->
+      <div class="Menu_tab">
+        <img class="close_icon" src="images/icon-close.svg" alt="close_icon">
+        <a href="#Collections">Collections</a>
+        <a href="#Men">Men</a>
+        <a href="#Women">Women</a>
+        <a href="#About">About</a>
+        <a href="#Contact">Contact</a>
+    </div>
+    </div>
+
+<div class="top_header">
+  <button class="logo_button" type="button" name="button">
+    <img src="images/logo.svg" alt="logo">
+  </button>
+  <button class="header_a" type="button" name="button">
+    Collections
+  </button>
+  <button class="header_a" type="button" name="button">
+    Men
+  </button>
+  <button class="header_a" type="button" name="button">
+    Women
+  </button>
+  <button class="header_a" type="button" name="button">
+    About
+  </button>
+  <button class="header_a" type="button" name="button">
+    Contact
+  </button>
+  <button class="cart_button" type="button" name="button">
+    <section class="sectionCount">
+    <!-- addede to the javascript.. -->
+    </section>
+    <img  src="images/icon-cart.svg" alt="logo">
+  </button>
+  <button class="lap_cart_button" type="button" name="button">
+    <section class="sectionCount">
+    <!-- addede to the javascript.. -->
+    </section>
+    <img  src="images/icon-cart.svg" alt="logo">
+  </button>
+  <button class="avatar_button" type="button" name="button">
+    <img  class="avatar" src="images/image-avatar.png" alt="logo">
+  </button>
+
+</div>
+
+</div>
+<!-- cartSection............ -->
+      <div class="lap_cartSection">
+        <h3>Cart</h3>
+        <div class="lap_TotalAmt">
+          <img class="product" src="images/image-product-1-thumbnail.jpg" alt="product-1">
+          <p>Fall limited Edition....</p>
+          <p class="originalValue">$125.00 x<p>
+          <section class="cart_value">
+
+          </section>
+          <section class="Amount">
+
+          </section>
+          <img class="delete" src="images/icon-delete.svg" alt="delete">
+          </div>
+          <button type="button" name="button">Checkout</button>
+        </div>
+
+      <!-- end cartSection...............-->
+<!-- Product section........ -->
+<div class="grid_container_2">
+    <div class="grid_2_items image_section">
+
+      <div class="product_pictures">
+        <table>
+          <tr>
+            <td colspan="4">
+            <button class="in_the_image in_previus" type="button">  <img class="" src="images/icon-previous.svg" alt="previous"> </button>
+              <img class="picture_1" src="images/image-product-1.jpg" alt="product_picture_1">
+              <button class="in_the_image in_next" type="button"> <img class="" src="images/icon-next.svg" alt="next"> </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="bottom_pictures">
+              <img class="small_picture small_picture_1" src="images/image-product-1-thumbnail.jpg" onclick="smallpicture_count(1)" alt="product_picture_1">
+            </td>
+            <td class="bottom_pictures">
+              <img class="small_picture" src="images/image-product-2-thumbnail.jpg" onclick="smallpicture_count(2)" alt="product_picture_2">
+            </td>
+            <td class="bottom_pictures">
+              <img class="small_picture" src="images/image-product-3-thumbnail.jpg" onclick="smallpicture_count(3)" alt="product_picture_3">
+            </td>
+            <td class="bottom_pictures">
+              <img class="small_picture" src="images/image-product-4-thumbnail.jpg" onclick="smallpicture_count(4)" alt="product_picture_4">
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+    <!-- slide-container with .... -->
+
+    <div class="Slide_container">
+      <div class="X_image">
+        <img src="images/icon-close.svg" alt="close">
+      </div>
+<!-- cartSection............ -->
+      <div class="cartSection">
+        <h3>Cart</h3>
+        <div class="TotalAmt">
+        <img class="product" src="images/image-product-1-thumbnail.jpg" alt="product-1">
+        <p>Fall limited Edition....</p>
+        <p class="originalValue">$125.00 x<p>
+        <section class="cart_value">
+
+        </section>
+        <section class="Amount">
+
+        </section>
+        <img class="delete" src="images/icon-delete.svg" alt="delete">
+        </div>
+        <button type="button" name="button">Checkout</button>
+      </div>
+      <!-- end cartSection............... -->
+      <div class="slides_a fade">
+        <img src="images/image-product-1.jpg" alt="product-1">
+      </div>
+      <div class="slides_a fade">
+        <img src="images/image-product-2.jpg" alt="product-1">
+      </div>
+      <div class="slides_a fade">
+        <img src="images/image-product-3.jpg" alt="product-1">
+      </div>
+      <div class="slides_a fade">
+        <img src="images/image-product-4.jpg" alt="product-1">
+
+      </div>
+      <!-- lap version added the images.... -->
+
+      <div class="small_images">
+        <img class="dot" src="images/image-product-1-thumbnail.jpg" onclick="currentSlide(1)" alt="product-1">
+        <img class="dot" src="images/image-product-2-thumbnail.jpg" onclick="currentSlide(2)" alt="product-1">
+        <img class="dot" src="images/image-product-3-thumbnail.jpg" onclick="currentSlide(3)" alt="product-1">
+        <img class="dot" src="images/image-product-4-thumbnail.jpg" onclick="currentSlide(4)" alt="product-1">
+      </div>
+
+      <a class="prev" href="#">&#10094;</a>
+      <a class="next" href="#">&#10095;</a>
+
+    </div>
+
+    <!-- end of the slides shows........... -->
+    <div class="grid_2_items">
+
+      <!-- cart section............. -->
+
+      <div class="cart_added_section">
+        <p class="head_colour"><strong>SNEAKER COMPANY</strong></p>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.</p>
+        <h2>$125.00</h2>
+        <p class="offer">50%</p>
+        <p class="strike_amount"><s>$250.00</s></p>
+            <div class="button_section">
+              <button class="button_lower button_minus" type="button" name="button"><img src="images/icon-minus.svg" alt="minus"></button>
+            <input class="button_lower no_of_items" type="button" name="button" value="0">
+            <button class="button_lower button_plus"type="button" name="button"><img src="images/icon-plus.svg" alt="plus"></button>
+            </div>
+      <button class="added_button button_lower" type="button" name="button">
+        <strong class="adding_cart"><img class="adding_logo" src="images/icon-cart.svg" alt="cart_logo">Add to cart</strong>
+       </button>
+
+    </div>
+
+</div>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
