@@ -286,7 +286,7 @@ h2 {
 
   #header {
     margin-top: 5%;
-    margin-left: 6%;
+    margin-left: 2%;
     margin-bottom: 5%;
     padding-bottom: 0;
     border-bottom: 0;
@@ -410,7 +410,7 @@ top: 27px;
 left: 45%;
 }
 .TotalAmt .cart_value {
-margin-left: 3%;
+margin-left: 8%;
 margin-right: 2%;
 opacity: 0.5;
 }
